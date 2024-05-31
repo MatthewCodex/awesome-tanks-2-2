@@ -21228,7 +21228,7 @@ function() {
         x = window.AT.bonus.SmallEnemy,
         _ = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, .1, 1],
         v = [];
-    v[0] = r, v[1] = a, v[2] = h, v[3] = l, v[4] = d, v[5] = c, v[6] = p, v[7] = b, v[8] = y, v[9] = f, v[10] = m, v[11] = u, v[12] = g, v[13] = x, t.prototype = Object.create(n.prototype), t.prototype.ammoWeightFor = function(t) {
+    v[0] = r, v[1] = x, v[2] = h, v[3] = l, v[4] = d, v[5] = c, v[6] = p, v[7] = b, v[8] = y, v[9] = f, v[10] = m, v[11] = u, v[12] = g, v[13] = a, t.prototype = Object.create(n.prototype), t.prototype.ammoWeightFor = function(t) {
         return t && t.ammo !== 1 / 0 ? 2 * (1 - t.ammo / t.maxAmmo) : 0
     }, t.prototype.getRandomBonus = function() {
         var t = this.game.state.getCurrentState(),
@@ -21828,7 +21828,7 @@ function() {
     }
 
     function r(e, i, o) {
-        t.call(this, e, i, o, "game/turrets/generic_base.png", "game/turrets/ricochet.png"), this.turret.anchor.set(16 / 43, .5), this.setHealth(2e3), this.points = 600, this.sightRange = 600, this.shootAngle = 30, this.weapon = new x(this, {
+        t.call(this, e, i, o, "game/turrets/laser_base.png", "game/turrets/ricochet.png"), this.turret.anchor.set(16 / 43, .5), this.setHealth(2e3), this.points = 600, this.sightRange = 600, this.shootAngle = 30, this.weapon = new x(this, {
             id: "turrets/ricochet",
             team: p.CPU,
             damage: 80,
@@ -21840,7 +21840,7 @@ function() {
     }
 
     function a(e, i, o) {
-        t.call(this, e, i, o, "game/turrets/generic_base.png", "game/turrets/railgun.png"), this.turret.anchor.set(16 / 43, .5), this.setHealth(1500), this.points = 1100, this.sightRange = 400, this.shootAngle = 15, this.turretRotationSpeed = 1.75, this.weapon = new S(this, {
+        t.call(this, e, i, o, "game/turrets/laser_base.png", "game/turrets/railgun.png"), this.turret.anchor.set(16 / 43, .5), this.setHealth(1500), this.points = 1100, this.sightRange = 400, this.shootAngle = 15, this.turretRotationSpeed = 1.75, this.weapon = new S(this, {
             id: "turrets/railgun",
             team: p.CPU,
             damage: 333,
@@ -21850,7 +21850,7 @@ function() {
     }
 
     function h(e, i, o) {
-        t.call(this, e, i, o, "game/turrets/generic_base.png", "game/turrets/flamethrower.png"), this.turret.anchor.set(24 / 53, .5), this.setHealth(1250), this.points = 700, this.sightRange = 400, this.shootAngle = 25, this.turretRotationSpeed = 3, this.weapon = new A(this, {
+        t.call(this, e, i, o, "game/turrets/laser_base.png", "game/turrets/flamethrower.png"), this.turret.anchor.set(24 / 53, .5), this.setHealth(1250), this.points = 700, this.sightRange = 400, this.shootAngle = 25, this.turretRotationSpeed = 3, this.weapon = new A(this, {
             id: "turrets/flamethrower",
             team: p.CPU,
             damage: 1,
