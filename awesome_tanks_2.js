@@ -20994,7 +20994,7 @@ function() {
                 9: [i, o, a],
                 11: [o, a, s],
                 13: [a, s, r],
-                15: [t, e, n, h, i, o, a, s, r]
+                15: [a, s, r]
             }
         }
         return _
