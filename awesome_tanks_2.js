@@ -20993,7 +20993,8 @@ function() {
                 7: [h, i, o],
                 9: [i, o, a],
                 11: [o, a, s],
-                13: [a, s, r]
+                13: [a, s, r],
+                15: [t, e, n, h, i, o, a, s, r]
             }
         }
         return _
@@ -21002,7 +21003,7 @@ function() {
     function a(t) {
         var e, i = t.state.getCurrentState(),
             o = r();
-        return e = i.number >= 13 ? o[13] : i.number >= 11 ? o[11] : i.number >= 9 ? o[9] : i.number >= 7 ? o[7] : i.number >= 5 ? o[5] : i.number >= 3 ? o[3] : o[1], e[h(x)]
+        return e = i.number >= 15 ? o[15] : i.number >= 13 ? o[13] : i.number >= 11 ? o[11] : i.number >= 9 ? o[9] : i.number >= 7 ? o[7] : i.number >= 5 ? o[5] : i.number >= 3 ? o[3] : o[1], e[h(x)]
     }
     var h = (window.AT.common.COLLISION_GROUPS, window.AT.common.weightedChoice),
         l = window.AT.audio;
