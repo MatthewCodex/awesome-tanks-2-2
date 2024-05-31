@@ -22118,7 +22118,7 @@ function() {
             id: "tanks/ricochet",
             team: v.CPU,
             rate: 4,
-            damage: 80,
+            damage: 100,
             life: 100 / 60,
             spawnDistance: 24
         })
