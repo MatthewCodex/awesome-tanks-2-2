@@ -22085,7 +22085,7 @@ function() {
             id: "tanks/cannon",
             team: v.CPU,
             damage: 200,
-            rate: 1.5,
+            rate: 2,
             life: 100 / 60,
             spawnDistance: 26
         })
@@ -22127,8 +22127,8 @@ function() {
         d.call(this, t, e, i, "game/tanks/railgun_boss.png"), this.turret.position.x = 1, this.turret.anchor.set(15 / 41, .5), this.setHealth(4e3), this.points = 1200, this.sightRange = 350 * this.level.difficulty, this.shootRange = this.sightRange / 2, this.shootAngle = 42, this.weapon = new V(this, {
             id: "tanks/railgun",
             team: v.CPU,
-            rate: 1.2,
-            damage: 333,
+            rate: 2.2,
+            damage: 400,
             spawnDistance: 34
         })
     }
@@ -22824,7 +22824,7 @@ function() {
         h = "menu/upgrades/parts.png",
         l = "menu/upgrades/parts/buttons/off.png",
         d = {
-            minigun: "Low damage.\nInfinite ammo.",
+            minigun: "Low damage. \nInfinite ammo.",
             shotgun: "Moderate\nspread damage.",
             ricochet: "Hold fire button\nto charge.\nBounces off walls.",
             flamethrower: "Sets enemies\non fire, dealing\nextra damage.",
