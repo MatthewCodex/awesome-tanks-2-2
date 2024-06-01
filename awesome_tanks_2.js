@@ -22533,7 +22533,7 @@ function() {
         et = [1, 60 / 56, 60 / 52, 1.25, 60 / 44, 1.5],
         it = [500, 550, 600, 650, 700, 750],
         ot = [457, 569, 681, 793, 905, 1017];
-    t.ARMOR_LEVELS = [700, 1260, 2100, 3220, 4900, 6300], t.TURRET_LEVELS = [4, 5, 6, 7, 8, 9], t.SPEED_LEVELS = [159.84, 170.88, 3.8 * 48, 192, 4.27 * 48, 216], t.ACCELERATION_LEVELS = [.2, .23, .26, .3, .32, .34], t.VIEW_ANGLE_LEVELS = [Math.PI / 4, Math.PI / 3.5, Math.PI / 2.5, Math.PI / 2, Math.PI / 1.5, Math.PI], t.VIEW_DISTANCE_LEVELS = [230, 250, 270, 300, 320, 350], t.autoAimFilter = function(t, e, o, s) {
+    t.ARMOR_LEVELS = [700, 1260, 2100, 3220, 4900, 6300], t.TURRET_LEVELS = [4, 5, 6, 7, 8, 9], t.SPEED_LEVELS = [159.84, 170.88, 3.8 * 48, 192, 4.27 * 48, 345], t.ACCELERATION_LEVELS = [.2, .23, .26, .3, .32, .8], t.VIEW_ANGLE_LEVELS = [Math.PI / 4, Math.PI / 3.5, Math.PI / 2.5, Math.PI / 2, Math.PI / 1.5, Math.PI], t.VIEW_DISTANCE_LEVELS = [230, 250, 270, 300, 320, 350], t.autoAimFilter = function(t, e, o, s) {
         return e.GetFilterData().categoryBits !== i.PROJECTILE
     }, t.prototype = Object.create(Phaser.Sprite.prototype), t.prototype.onMinigunShot = function(t) {
         this.level.alertSound(this.bodyX, this.bodyY, 200)
