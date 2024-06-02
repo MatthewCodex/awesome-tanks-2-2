@@ -21137,22 +21137,13 @@ function() {
     var e = window.AT.profile,
         i = window.AT.audio,
         o = window.AT.Obstacle,
-        s = window.AT.Fire,
-        r = window.AT.tanks.MinigunTank,
-        a = window.AT.tanks.ShotgunTank,
-        h = window.AT.tanks.RicochetTank,
-        l = window.AT.tanks.FlamethrowerTank,
-        d = window.AT.tanks.CannonTank,
-        c = window.AT.tanks.RocketsTank,
-        p = window.AT.tanks.KamikazeTank,
-        u = window.AT.tanks.LaserTank,
-        b = window.AT.tanks.RailgunTank,
-        n = [r,a,h,l,d,c,p,u,b];
+        s = window.AT.Fire;
+        
     t.prototype = Object.create(o.prototype), t.prototype.onBulletHit = function(t, e, i, n) {
         n && !this.fire && (e instanceof window.AT.weapon.Flamethrower || e instanceof s) && (this.fire = new s(this, .25 * t)), o.prototype.onBulletHit.call(this, t, e, i, n)
     }, t.prototype.kill = function() {
         var t = this.game.state.getCurrentState();
-        t.shakeCamera(4), t.explosionEmitter.emitParticle(this.body.x, this.body.y), e.current.stats.wallsDestroyed += 1, e.increaseAchievement("destroyer") && t.achievements.show("destroyer"), o.prototype.kill.call(this), i.playSound("bricks.mp3"), t.createTank(this.body.x, this.body.y, Math.floor(Math.random() * n.length)
+        t.shakeCamera(4), t.explosionEmitter.emitParticle(this.body.x, this.body.y), e.current.stats.wallsDestroyed += 1, e.increaseAchievement("destroyer") && t.achievements.show("destroyer"), o.prototype.kill.call(this), i.playSound("bricks.mp3")
     }, window.AT.Wood = t
 }(),
 function() {
